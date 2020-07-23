@@ -1,3 +1,14 @@
+mat-toolbar {
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+}
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 55px;
+}
+.mat-toolbar-multiple-rows {
+  min-height: 55px;
+}
 .example-icon {
   padding: 0 14px;
 }

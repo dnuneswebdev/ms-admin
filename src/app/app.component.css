@@ -4,10 +4,20 @@
   height: 100%;
 }
 
-.mat-drawer {
-  width: 250px;
+mat-sidenav {
+  width: 200px;
+  box-shadow: -3px 20px 20px -10px rgba(0, 0, 0, 0.75) !important;
+  background-color: #313947;
 }
 
-.mat-drawer-container {
+mat-sidenav-content {
+  background-color: #f9fbfd;
+}
+
+mat-sidenav-container {
   height: 100%;
+}
+
+app-menu {
+  color: #a6b2c1;
 }
