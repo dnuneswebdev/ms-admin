@@ -1,6 +1,6 @@
 mat-toolbar {
   background-color: #fff;
-  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1) !important;
 }
 .mat-toolbar-row,
 .mat-toolbar-single-row {

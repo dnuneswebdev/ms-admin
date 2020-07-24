@@ -18,6 +18,14 @@ mat-sidenav-container {
   height: 100%;
 }
 
-app-menu {
-  color: #a6b2c1;
+.logo {
+  margin-top: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 50px;
+  margin-left: 5px;
 }
