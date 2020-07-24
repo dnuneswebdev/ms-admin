@@ -3,6 +3,10 @@ a {
   transition: all 0.3s;
 }
 
+mat-nav-list {
+  margin-top: 40px;
+}
+
 .mat-nav-list .mat-list-item {
   color: #a6b2c1;
   font-weight: 300 !important;
