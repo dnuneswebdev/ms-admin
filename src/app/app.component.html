@@ -1,5 +1,5 @@
 <mat-sidenav-container>
-  <mat-sidenav [mode]="mobileQuery.matches ? 'over' : 'side'" opened>
+  <mat-sidenav #sidenav [mode]="mobileQuery.matches ? 'over' : 'side'" opened>
     <!-- logo -->
     <div class="logo">
       <img src="../assets/images/logo.png" alt="MS Admin Logo">
@@ -9,7 +9,7 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <!-- header -->
-    <app-header *ngIf="!isLoginPage"></app-header>
+    <app-header *ngIf="!isLoginPage" (toggleSidenav)="sidenav.toggle()"></app-header>
     <!-- content -->
     <router-outlet></router-outlet>
     <!-- footer -->
