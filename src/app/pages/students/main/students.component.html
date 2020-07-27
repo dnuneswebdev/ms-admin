@@ -1,3 +1,16 @@
-<section class="content">
-  <p>Students</p>
+<section class="page-default">
+  <!-- breadcrumb -->
+  <app-breadcrumb [breadcrumbs]="[ 
+    {icon: 'school' , label: 'Alunos', link: '/students' }]">
+  </app-breadcrumb>
+
+  <!-- page title -->
+  <app-page-title [pageTitle]="{
+  icon: 'school', title: 'Alunos'}">
+  </app-page-title>
+
+  <!-- content -->
+  <div class="content">
+    <p>Students</p>
+  </div>
 </section>

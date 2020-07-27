@@ -1,0 +1,14 @@
+<div *ngFor="let breadcrumb of breadcrumbs" class="breadcrumbs">
+  <a *ngIf="!isLastBreadcrumb(breadcrumb) && breadcrumb.link" [routerLink]="breadcrumb.link">
+    <mat-icon color="primary">{{breadcrumb.icon}}</mat-icon>
+    {{breadcrumb.label}} <span>/</span>
+  </a>
+  <span *ngIf="!isLastBreadcrumb(breadcrumb) && !breadcrumb.link">
+    <mat-icon color="primary">{{breadcrumb.icon}}</mat-icon>
+    {{ breadcrumb.label }} <span>/</span>
+  </span>
+  <span *ngIf="isLastBreadcrumb(breadcrumb)">
+    <mat-icon color="primary">{{breadcrumb.icon}}</mat-icon>
+    {{ breadcrumb.label }}
+  </span>
+</div>

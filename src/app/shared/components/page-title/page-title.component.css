@@ -1,0 +1,12 @@
+.page-title {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+mat-icon {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+}

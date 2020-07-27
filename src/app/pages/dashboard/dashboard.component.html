@@ -1,3 +1,16 @@
-<section class="content">
-  <p>dashboard</p>
+<section class="page-default">
+  <!-- breadcrumb -->
+  <app-breadcrumb [breadcrumbs]="[ 
+    {icon: 'insert_chart_outlined' , label: 'Dashboard', link: '/dashboard' }]">
+  </app-breadcrumb>
+
+  <!-- page title -->
+  <app-page-title [pageTitle]="{
+    icon: 'insert_chart_outlined', title: 'Dashboard'}">
+  </app-page-title>
+
+  <!-- content -->
+  <div class="content">
+    <p>dashboard</p>
+  </div>
 </section>

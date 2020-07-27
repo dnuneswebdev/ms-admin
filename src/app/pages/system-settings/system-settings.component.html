@@ -1,3 +1,16 @@
-<section class="content">
-  <p>System Settings</p>
+<section class="page-default">
+  <!-- breadcrumb -->
+  <app-breadcrumb [breadcrumbs]="[ 
+    {icon: 'settings' , label: 'Configurações', link: '/system-settings' }]">
+  </app-breadcrumb>
+
+  <!-- page title -->
+  <app-page-title [pageTitle]="{
+    icon: 'settings', title: 'Configurações'}">
+  </app-page-title>
+
+  <!-- content -->
+  <div class="content">
+    <p>System Settings</p>
+  </div>
 </section>

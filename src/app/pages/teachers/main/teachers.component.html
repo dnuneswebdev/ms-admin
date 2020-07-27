@@ -1,3 +1,16 @@
-<section class="content">
-  <p>Teachers Details</p>
+<section class="page-default">
+  <!-- breadcrumb -->
+  <app-breadcrumb [breadcrumbs]="[ 
+    {icon: 'accessibility_new' , label: 'Professores', link: '/teachers' }]">
+  </app-breadcrumb>
+
+  <!-- page title -->
+  <app-page-title [pageTitle]="{
+  icon: 'accessibility_new', title: 'Professores'}">
+  </app-page-title>
+
+  <!-- content -->
+  <div class="content">
+    <p>Teachers</p>
+  </div>
 </section>

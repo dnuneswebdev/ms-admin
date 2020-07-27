@@ -1,0 +1,23 @@
+.breadcrumbs a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.breadcrumbs span {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+mat-icon {
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+  margin-right: 2px;
+}
+
+span {
+  margin-left: 5px;
+}

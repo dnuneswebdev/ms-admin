@@ -1,3 +1,16 @@
-<section class="content">
-  <p>Calendar</p>
+<section class="page-default">
+  <!-- breadcrumb -->
+  <app-breadcrumb [breadcrumbs]="[ 
+    {icon: 'date_range' , label: 'Calendário', link: '/calendar' }]">
+  </app-breadcrumb>
+
+  <!-- page title -->
+  <app-page-title [pageTitle]="{
+  icon: 'date_range', title: 'Calendário'}">
+  </app-page-title>
+
+  <!-- content -->
+  <div class="content">
+    <p>Calendar</p>
+  </div>
 </section>
