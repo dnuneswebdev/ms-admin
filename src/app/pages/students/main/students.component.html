@@ -9,8 +9,20 @@
   icon: 'school', title: 'Alunos'}">
   </app-page-title>
 
+  <!-- buttons -->
+  <div class="mb-2">
+    <button mat-raised-button class="mr-1">
+      <mat-icon>upgrade</mat-icon>
+      Exportar
+    </button>
+    <button mat-raised-button color="primary" (click)="addStudent()">
+      <mat-icon>person_add</mat-icon>
+      Add Aluno
+    </button>
+  </div>
+
   <!-- content -->
   <div class="content">
-    <p>Students</p>
+    <app-datatable></app-datatable>
   </div>
 </section>
