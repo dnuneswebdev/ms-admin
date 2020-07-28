@@ -23,6 +23,8 @@
 
   <!-- content -->
   <div class="content">
-    <app-datatable></app-datatable>
+    <app-datatable [tableData]="teachers" [tableColumns]="['status', 'name', 'email', 'age', 'role']"
+      [tableHeaderCells]="['Status', 'Nome', 'E-mail', 'Idade', 'Profissão']">
+    </app-datatable>
   </div>
 </section>

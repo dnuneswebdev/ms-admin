@@ -47,19 +47,44 @@
     }
   ],
   "teachers": [{
-      "id": 1
+      "id": 1,
+      "name": "Rafael",
+      "email": "rafael@ms.com",
+      "age": 34,
+      "role": "Guitarrista",
+      "status": true
     },
     {
-      "id": 1
+      "id": 2,
+      "name": "Clecio",
+      "email": "clecio@ms.com",
+      "age": 30,
+      "role": "Baterista",
+      "status": true
     },
     {
-      "id": 1
+      "id": 3,
+      "name": "Juliana",
+      "email": "juliana@ms.com",
+      "age": 28,
+      "role": "Cantor(a)",
+      "status": true
     },
     {
-      "id": 1
+      "id": 4,
+      "name": "Andre",
+      "email": "andre@ms.com",
+      "age": 24,
+      "role": "Tecladista",
+      "status": true
     },
     {
-      "id": 1
+      "id": 5,
+      "name": "Zé",
+      "email": "zé@ms.com",
+      "age": 40,
+      "role": "Saxofonista",
+      "status": true
     }
   ]
 }

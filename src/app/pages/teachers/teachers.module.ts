@@ -8,6 +8,7 @@ import { PageTitleModule } from 'src/app/shared/components/page-title/page-title
 import { DatatableModule } from 'src/app/shared/components/datatable/datatable.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { TeachersService } from './services/teachers.service';
 
 
 @NgModule({
@@ -23,6 +24,9 @@ import { MatIconModule } from '@angular/material/icon';
     DatatableModule,
     MatButtonModule,
     MatIconModule,
+  ],
+  providers: [
+    TeachersService,
   ]
 })
 export class TeachersModule { }
