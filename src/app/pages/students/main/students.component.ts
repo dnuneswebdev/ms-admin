@@ -23,8 +23,8 @@ export class StudentsComponent implements OnInit {
 
   getAllStudents() {
     this.studentsService.getAllStudents()
-      .subscribe((students) => {
-        console.log(students);
+      .subscribe((students: Student[]) => {
+        this.students = students;
       })
   }
 

@@ -10,7 +10,7 @@
       "name": "John",
       "email": "john@ms.com",
       "age": 30,
-      "course": "Guitar",
+      "course": "Guitarra",
       "status": true
     },
     {
@@ -18,7 +18,7 @@
       "name": "Robert",
       "email": "robert@ms.com",
       "age": 22,
-      "course": "Bass",
+      "course": "Baixo",
       "status": true
     },
     {
@@ -34,7 +34,7 @@
       "name": "Marie",
       "email": "marie@ms.com",
       "age": 43,
-      "course": "Singer",
+      "course": "Canto",
       "status": true
     },
     {
@@ -42,7 +42,7 @@
       "name": "Daniel",
       "email": "daniel@ms.com",
       "age": 32,
-      "course": "Drums",
+      "course": "Bateria",
       "status": true
     }
   ],
