@@ -7,6 +7,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     SharedModule,
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatSidenavModule,
     FlexLayoutModule,
   ],

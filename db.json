@@ -2,22 +2,48 @@
   "user": {
     "id": 1,
     "name": "User",
-    "email": "user@test.com"
+    "email": "user@test.com",
+    "avatar": ""
   },
   "students": [{
-      "id": 1
+      "id": 1,
+      "name": "John",
+      "email": "john@ms.com",
+      "age": 30,
+      "course": "Guitar",
+      "status": true
     },
     {
-      "id": 1
+      "id": 2,
+      "name": "Robert",
+      "email": "robert@ms.com",
+      "age": 22,
+      "course": "Bass",
+      "status": true
     },
     {
-      "id": 1
+      "id": 3,
+      "name": "Anne",
+      "email": "anne@ms.com",
+      "age": 25,
+      "course": "Piano",
+      "status": true
     },
     {
-      "id": 1
+      "id": 4,
+      "name": "Marie",
+      "email": "marie@ms.com",
+      "age": 43,
+      "course": "Singer",
+      "status": true
     },
     {
-      "id": 1
+      "id": 5,
+      "name": "Daniel",
+      "email": "daniel@ms.com",
+      "age": 32,
+      "course": "Drums",
+      "status": true
     }
   ],
   "teachers": [{
