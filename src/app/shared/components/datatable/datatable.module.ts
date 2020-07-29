@@ -1,6 +1,7 @@
 //Angular
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 // Material
 import { MatTableModule } from '@angular/material/table';
@@ -12,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 //Component
 import { DatatableComponent } from './datatable.component';
@@ -23,6 +25,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
@@ -33,6 +36,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     MatProgressSpinnerModule,
     MatTooltipModule,
+    MatSlideToggleModule,
   ],
   exports: [
     DatatableComponent

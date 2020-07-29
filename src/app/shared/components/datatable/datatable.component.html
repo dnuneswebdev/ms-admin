@@ -14,7 +14,7 @@
     <ng-container matColumnDef="status" *ngIf="hasStatus">
       <mat-header-cell *matHeaderCellDef mat-sort-header>Status</mat-header-cell>
       <mat-cell *matCellDef="let element">
-        {{element.status}}
+        <mat-slide-toggle color="primary" [ngModel]="element.status"></mat-slide-toggle>
       </mat-cell>
     </ng-container>
 
@@ -28,7 +28,7 @@
     <ng-container matColumnDef="actions">
       <mat-header-cell *matHeaderCellDef>Ações</mat-header-cell>
       <mat-cell *matCellDef="let element">
-        <button mat-icon-button matTooltip="Editar" matTooltipPosition="above">
+        <button mat-icon-button matTooltip="Editar" matTooltipPosition="above" color="primary">
           <mat-icon>create</mat-icon>
         </button>
         <button mat-icon-button color="warn" matTooltip="Excluir" matTooltipPosition="above">
