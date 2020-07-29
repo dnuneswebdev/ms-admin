@@ -35,7 +35,7 @@
       "email": "marie@ms.com",
       "age": 43,
       "course": "Canto",
-      "status": true
+      "status": false
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "email": "daniel@ms.com",
       "age": 32,
       "course": "Bateria",
-      "status": true
+      "status": false
     }
   ],
   "teachers": [{
@@ -51,40 +51,35 @@
       "name": "Rafael",
       "email": "rafael@ms.com",
       "age": 34,
-      "role": "Guitarrista",
-      "status": true
+      "role": "Guitarrista"
     },
     {
       "id": 2,
       "name": "Clecio",
       "email": "clecio@ms.com",
       "age": 30,
-      "role": "Baterista",
-      "status": true
+      "role": "Baterista"
     },
     {
       "id": 3,
       "name": "Juliana",
       "email": "juliana@ms.com",
       "age": 28,
-      "role": "Cantor(a)",
-      "status": true
+      "role": "Cantor(a)"
     },
     {
       "id": 4,
       "name": "Andre",
       "email": "andre@ms.com",
       "age": 24,
-      "role": "Tecladista",
-      "status": true
+      "role": "Tecladista"
     },
     {
       "id": 5,
       "name": "Zé",
       "email": "zé@ms.com",
       "age": 40,
-      "role": "Saxofonista",
-      "status": true
+      "role": "Saxofonista"
     }
   ]
 }

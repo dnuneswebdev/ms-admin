@@ -4,5 +4,4 @@ export interface Teacher {
   email: string;
   age: number;
   role: string;
-  status: boolean;
 }

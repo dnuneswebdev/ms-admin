@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 //Component
 import { DatatableComponent } from './datatable.component';
@@ -31,6 +32,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatFormFieldModule,
     FlexLayoutModule,
     MatProgressSpinnerModule,
+    MatTooltipModule,
   ],
   exports: [
     DatatableComponent

@@ -16,9 +16,11 @@ export class DatatableComponent implements OnInit, AfterViewInit {
   @Input() tableData: Array<any>;
   @Input() tableColumns: Array<string>;
   @Input() tableHeaderCells: Array<string>;
+  @Input() hasStatus: boolean = true;
 
   isLoading: boolean = true;
   matTableDataSource: MatTableDataSource<any>;
+  displayedColumns: Array<string>;
 
   constructor() { }
 
@@ -35,6 +37,12 @@ export class DatatableComponent implements OnInit, AfterViewInit {
       this.matTableDataSource.sort = this.sort;
       this.matTableDataSource.paginator = this.paginator;
       this.isLoading = false;
+    }
+
+    if (this.hasStatus) {
+      this.displayedColumns = this.tableColumns.concat(['status', 'actions']);
+    } else {
+      this.displayedColumns = this.tableColumns.concat(['actions']);
     }
   }
 
