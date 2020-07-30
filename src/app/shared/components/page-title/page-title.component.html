@@ -1,4 +1,6 @@
 <div class="page-title">
   <mat-icon color="primary">{{pageTitle.icon}}</mat-icon>
-  <h1>{{pageTitle.title}}</h1>
+  <h1 *ngIf="!isForm && !isEditing">{{pageTitle.title}}</h1>
+  <h1 *ngIf="isForm && !isEditing">Cadastrar {{pageTitle.title}}</h1>
+  <h1 *ngIf="isForm && isEditing">Editar {{pageTitle.title}}</h1>
 </div>

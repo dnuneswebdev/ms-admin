@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeachersDetailsComponent implements OnInit {
 
+  isEditing: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {

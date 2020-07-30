@@ -9,6 +9,8 @@ import { PageTitle } from './models/page-title.model';
 export class PageTitleComponent implements OnInit {
 
   @Input() pageTitle: PageTitle;
+  @Input() isForm: boolean = false;
+  @Input() isEditing: boolean = false;
 
   constructor() { }
 

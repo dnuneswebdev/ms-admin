@@ -15,6 +15,7 @@ export class StudentsDetailsComponent implements OnInit {
 
   studentForm: FormGroup;
   courses: Course[];
+  isEditing: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
