@@ -12,6 +12,73 @@
 
   <!-- content -->
   <div class="content">
-    <p>Students details</p>
+    <form [formGroup]="studentForm" (ngSubmit)="submitStudentForm(studentForm.value)">
+      <mat-grid-list cols="2">
+        <mat-grid-tile>
+          <div fxLayout="column" class="w-80">
+            <h4>Dados do aluno</h4>
+            <!-- name -->
+            <mat-form-field appearance="outline">
+              <mat-label>Nome</mat-label>
+              <input matInput placeholder="Digite o nome" name="name" formControlName="name">
+              <mat-error>Nome é obrigatório.</mat-error>
+            </mat-form-field>
+            <!-- email -->
+            <mat-form-field appearance="outline">
+              <mat-label>E-mail</mat-label>
+              <input matInput type="email" placeholder="Digite o e-mail" name="email" formControlName="email">
+              <mat-error
+                *ngIf="studentForm.get('email').hasError('email') && !studentForm.get('email').hasError('required')">
+                Por favor, entre um e-mail válido.
+              </mat-error>
+              <mat-error *ngIf="studentForm.get('email').hasError('required')">
+                E-mail é obrigatório.
+              </mat-error>
+            </mat-form-field>
+            <!-- age -->
+            <mat-form-field appearance="outline">
+              <mat-label>Idade</mat-label>
+              <input matInput type="number" placeholder="Digite a idade" name="age" formControlName="age">
+              <mat-error>Idade é obrigatório.</mat-error>
+            </mat-form-field>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div fxLayout="column" class="w-80">
+            <h4>Curso</h4>
+            <!-- course -->
+            <mat-form-field appearance="outline">
+              <mat-label>Selecione um curso</mat-label>
+              <mat-select name="course" formControlName="course">
+                <mat-option *ngFor="let course of courses" [value]="course.name">
+                  {{course.name}}
+                </mat-option>
+              </mat-select>
+              <mat-error>Por favor, selecione um curso.</mat-error>
+            </mat-form-field>
+            <mat-divider></mat-divider>
+            <!-- date -->
+            <h4>Data de início</h4>
+            <mat-form-field appearance="outline">
+              <mat-label>Selecione uma data</mat-label>
+              <input matInput [matDatepicker]="picker" name="date" formControlName="date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              <mat-error>Por favor, selecione uma data.</mat-error>
+            </mat-form-field>
+            <mat-divider></mat-divider>
+            <!-- status -->
+            <h4>Status</h4>
+            <mat-slide-toggle color="primary" formControlName="status"></mat-slide-toggle>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+
+      <div fxLayoutAlign="end end">
+        <!-- form buttons -->
+        <button mat-stroked-button type="button" class="mr-1" (click)="cancelForm()">Cancelar</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="studentForm.invalid">Salvar</button>
+      </div>
+    </form>
   </div>
 </section>

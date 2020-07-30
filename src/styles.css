@@ -22,6 +22,10 @@ body {
   margin-bottom: 20px !important;
 }
 
+.w-80 {
+  width: 80%;
+}
+
 /*  */
 app-breadcrumb {
   display: inline-flex;
@@ -40,4 +44,9 @@ app-breadcrumb {
   padding: 15px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1) !important;
   border-radius: 4px;
+}
+
+.mat-grid-tile .mat-figure {
+  justify-content: start !important ;
+  align-items: start !important;
 }

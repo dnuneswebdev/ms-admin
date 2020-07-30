@@ -15,4 +15,12 @@ export class StudentsService {
     return this.http.get(`${environment.api}/students`);
   }
 
+  createNewStudent(student) {
+    return this.http.post(`${environment.api}/students`, student);
+  }
+
+  getAllCourses() {
+    return this.http.get(`${environment.api}/courses`);
+  }
+
 }

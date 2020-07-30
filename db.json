@@ -11,6 +11,7 @@
       "email": "john@ms.com",
       "age": 30,
       "course": "Guitarra",
+      "date": "30/07/2020",
       "status": true
     },
     {
@@ -19,6 +20,7 @@
       "email": "robert@ms.com",
       "age": 22,
       "course": "Baixo",
+      "date": "30/07/2020",
       "status": true
     },
     {
@@ -27,6 +29,7 @@
       "email": "anne@ms.com",
       "age": 25,
       "course": "Piano",
+      "date": "30/07/2020",
       "status": true
     },
     {
@@ -35,6 +38,7 @@
       "email": "marie@ms.com",
       "age": 43,
       "course": "Canto",
+      "date": "30/07/2020",
       "status": false
     },
     {
@@ -43,6 +47,7 @@
       "email": "daniel@ms.com",
       "age": 32,
       "course": "Bateria",
+      "date": "30/07/2020",
       "status": false
     }
   ],
@@ -80,6 +85,39 @@
       "email": "zé@ms.com",
       "age": 40,
       "role": "Saxofonista"
+    }
+  ],
+  "courses": [{
+      "id": 1,
+      "name": "Baixo"
+    },
+    {
+      "id": 2,
+      "name": "Bateria"
+    },
+    {
+      "id": 3,
+      "name": "Canto"
+    },
+    {
+      "id": 4,
+      "name": "Guitarra"
+    },
+    {
+      "id": 5,
+      "name": "Piano - Teclado"
+    },
+    {
+      "id": 6,
+      "name": "Saxofone"
+    },
+    {
+      "id": 7,
+      "name": "Ukulelê"
+    },
+    {
+      "id": 8,
+      "name": "Violão"
     }
   ]
 }
