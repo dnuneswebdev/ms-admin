@@ -12,8 +12,8 @@
 
   <!-- content -->
   <div class="content">
-    <form [formGroup]="studentForm" (ngSubmit)="submitStudentForm(studentForm.value)">
-      <mat-grid-list cols="2">
+    <form [formGroup]="studentForm" (ngSubmit)="submitStudentForm(studentForm.value)" *ngIf="!isLoading">
+      <mat-grid-list cols="2" rowHeight="450px">
         <mat-grid-tile>
           <div fxLayout="column" class="w-80">
             <h4>Dados do aluno</h4>
@@ -77,8 +77,14 @@
       <div fxLayoutAlign="end end">
         <!-- form buttons -->
         <button mat-stroked-button type="button" class="mr-1" (click)="cancelForm()">Cancelar</button>
-        <button mat-raised-button color="primary" type="submit" [disabled]="studentForm.invalid">Salvar</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="isSubmittingForm || studentForm.invalid">
+          <mat-spinner *ngIf="isSubmittingForm" diameter="20" class="submit-form-spinner"></mat-spinner>
+          Salvar
+        </button>
       </div>
     </form>
+
+    <!-- spinner -->
+    <mat-spinner *ngIf="isLoading" diameter="75" class="form-spinner"></mat-spinner>
   </div>
 </section>

@@ -5,3 +5,11 @@ form {
 mat-form-field {
   width: 100% !important;
 }
+
+.form-spinner {
+  margin: 0 auto;
+}
+
+.submit-form-spinner {
+  display: inline-flex;
+}

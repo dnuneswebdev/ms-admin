@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { StudentsService } from '../services/students.service';
 import { Student } from '../models/student.model';
-import { DatePipe } from '@angular/common';
 import { Course } from 'src/app/shared/models/course.model';
 
 @Component({
@@ -16,6 +15,8 @@ export class StudentsDetailsComponent implements OnInit {
   studentForm: FormGroup;
   courses: Course[];
   isEditing: boolean = false;
+  isLoading: boolean = false;
+  isSubmittingForm: boolean = false;
   studentId: number;
   routeParams: any;
 
@@ -23,7 +24,6 @@ export class StudentsDetailsComponent implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
-    private datePipe: DatePipe,
     private studentsService: StudentsService,
   ) { }
 
@@ -33,6 +33,7 @@ export class StudentsDetailsComponent implements OnInit {
 
     if (this.checkIfIsEditing()) {
       this.getStudentData();
+    } else {
     }
 
   }
@@ -65,9 +66,14 @@ export class StudentsDetailsComponent implements OnInit {
   }
 
   getStudentData() {
+    this.isLoading = true;
+
     this.studentsService.getStudent(this.studentId)
       .subscribe((student: Student) => {
         this.patchValueStudentForm(student)
+        setTimeout(() => {
+          this.isLoading = false;
+        }, 300);
       }, error => {
         console.log(error);
       });
@@ -105,13 +111,27 @@ export class StudentsDetailsComponent implements OnInit {
   }
 
   createStudent(student: Student) {
+    this.isSubmittingForm = true;
     this.studentsService.createNewStudent(student)
-      .subscribe((response) => console.log('criado' + student.name));
+      .subscribe((response) => {
+        setTimeout(() => {
+          this.isLoading = false;
+          this.router.navigate(['/students']);
+          this.studentForm.reset();
+        }, 500);
+      });
   }
 
   updateStudent(student: Student) {
+    this.isSubmittingForm = true;
     this.studentsService.updateStudent(student.id, student)
-      .subscribe((response) => console.log('alterado' + student.name))
+      .subscribe((response) => {
+        setTimeout(() => {
+          this.isLoading = false;
+          this.router.navigate(['/students']);
+          this.studentForm.reset();
+        }, 500);
+      })
   }
 
   cancelForm() {

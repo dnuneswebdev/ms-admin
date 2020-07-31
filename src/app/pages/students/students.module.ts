@@ -15,6 +15,7 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 //Components
 import { BreadcrumbModule } from 'src/app/shared/components/breadcrumb/breadcrumb.module';
@@ -49,6 +50,7 @@ import { StudentsService } from './services/students.service';
     MatGridListModule,
     MatDividerModule,
     MatSlideToggleModule,
+    MatProgressSpinnerModule,
   ],
   providers: [
     StudentsService,
