@@ -20,13 +20,13 @@
             <!-- name -->
             <mat-form-field appearance="outline">
               <mat-label>Nome</mat-label>
-              <input matInput placeholder="Digite o nome" name="name" formControlName="name">
+              <input matInput placeholder="Digite o nome" name="name" formControlName="name" required>
               <mat-error>Nome é obrigatório.</mat-error>
             </mat-form-field>
             <!-- email -->
             <mat-form-field appearance="outline">
               <mat-label>E-mail</mat-label>
-              <input matInput type="email" placeholder="Digite o e-mail" name="email" formControlName="email">
+              <input matInput type="email" placeholder="Digite o e-mail" name="email" formControlName="email" required>
               <mat-error
                 *ngIf="studentForm.get('email').hasError('email') && !studentForm.get('email').hasError('required')">
                 Por favor, entre um e-mail válido.
@@ -38,7 +38,7 @@
             <!-- age -->
             <mat-form-field appearance="outline">
               <mat-label>Idade</mat-label>
-              <input matInput type="number" placeholder="Digite a idade" name="age" formControlName="age">
+              <input matInput type="number" placeholder="Digite a idade" name="age" formControlName="age" required>
               <mat-error>Idade é obrigatório.</mat-error>
             </mat-form-field>
           </div>
@@ -49,7 +49,7 @@
             <!-- course -->
             <mat-form-field appearance="outline">
               <mat-label>Selecione um curso</mat-label>
-              <mat-select name="course" formControlName="course">
+              <mat-select name="course" formControlName="course" required>
                 <mat-option *ngFor="let course of courses" [value]="course.name">
                   {{course.name}}
                 </mat-option>
@@ -61,7 +61,7 @@
             <h4>Data de início</h4>
             <mat-form-field appearance="outline">
               <mat-label>Selecione uma data</mat-label>
-              <input matInput [matDatepicker]="picker" name="date" formControlName="date">
+              <input matInput [matDatepicker]="picker" name="date" formControlName="date" required>
               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
               <mat-error>Por favor, selecione uma data.</mat-error>

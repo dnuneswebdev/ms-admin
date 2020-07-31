@@ -4,6 +4,6 @@ export interface Student {
   email: string;
   age: number;
   course: string;
-  date: Date;
+  date: Date | string;
   status: boolean;
 }

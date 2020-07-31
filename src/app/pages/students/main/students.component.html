@@ -24,7 +24,7 @@
   <!-- content -->
   <div class="content">
     <app-datatable [tableData]="students" [tableColumns]="['name', 'email', 'age', 'course']"
-      [tableHeaderCells]="['Nome', 'E-mail', 'Idade', 'Curso']" [hasStatus]="true">
+      [tableHeaderCells]="['Nome', 'E-mail', 'Idade', 'Curso']" [hasStatus]="true" (editItem)="editStudent($event)">
     </app-datatable>
   </div>
 </section>

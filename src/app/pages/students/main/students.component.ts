@@ -32,4 +32,8 @@ export class StudentsComponent implements OnInit {
     this.router.navigate(['/students/add']);
   }
 
+  editStudent(student) {
+    this.router.navigate([`/students/edit/${student.id}`]);
+  }
+
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, AfterViewInit, Output, EventEmitter } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
@@ -17,6 +17,9 @@ export class DatatableComponent implements OnInit, AfterViewInit {
   @Input() tableColumns: Array<string>;
   @Input() tableHeaderCells: Array<string>;
   @Input() hasStatus: boolean = true;
+
+  @Output() editItem = new EventEmitter();
+  @Output() deleteItem = new EventEmitter();
 
   isLoading: boolean = true;
   matTableDataSource: MatTableDataSource<any>;
@@ -48,6 +51,10 @@ export class DatatableComponent implements OnInit, AfterViewInit {
 
   filterTable(value: string) {
     this.matTableDataSource.filter = value.trim().toLowerCase();
+  }
+
+  editTableItem(item) {
+    this.editItem.emit(item);
   }
 
 }

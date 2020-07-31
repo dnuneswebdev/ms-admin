@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -53,6 +53,7 @@ import { StudentsService } from './services/students.service';
   providers: [
     StudentsService,
     DatePipe,
+    { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' }
   ]
 })
 export class StudentsModule { }

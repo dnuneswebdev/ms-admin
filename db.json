@@ -5,13 +5,14 @@
     "email": "user@test.com",
     "avatar": ""
   },
-  "students": [{
+  "students": [
+    {
       "id": 1,
-      "name": "John",
+      "name": "Johnnnnnn",
       "email": "john@ms.com",
       "age": 30,
       "course": "Guitarra",
-      "date": "30/07/2020",
+      "date": "2020-07-29T15:15:01.000Z",
       "status": true
     },
     {
@@ -20,7 +21,7 @@
       "email": "robert@ms.com",
       "age": 22,
       "course": "Baixo",
-      "date": "30/07/2020",
+      "date": "Fri Jul 31 2020 12:15:01 GMT-0300",
       "status": true
     },
     {
@@ -28,8 +29,8 @@
       "name": "Anne",
       "email": "anne@ms.com",
       "age": 25,
-      "course": "Piano",
-      "date": "30/07/2020",
+      "course": "Piano - Teclado",
+      "date": "Mon Jul 28 2020 12:15:01 GMT-0300",
       "status": true
     },
     {
@@ -38,7 +39,7 @@
       "email": "marie@ms.com",
       "age": 43,
       "course": "Canto",
-      "date": "30/07/2020",
+      "date": "2020-07-13T03:00:00.000Z",
       "status": false
     },
     {
@@ -47,11 +48,21 @@
       "email": "daniel@ms.com",
       "age": 32,
       "course": "Bateria",
-      "date": "30/07/2020",
+      "date": "Fri Jul 31 2020 12:15:01 GMT-0300",
       "status": false
+    },
+    {
+      "id": 303,
+      "name": "Teste",
+      "email": "teste@2",
+      "age": 22,
+      "course": "Piano - Teclado",
+      "date": "2030-11-21T03:00:00.000Z",
+      "status": true
     }
   ],
-  "teachers": [{
+  "teachers": [
+    {
       "id": 1,
       "name": "Rafael",
       "email": "rafael@ms.com",
@@ -87,7 +98,8 @@
       "role": "Saxofonista"
     }
   ],
-  "courses": [{
+  "courses": [
+    {
       "id": 1,
       "name": "Baixo"
     },
