@@ -8,9 +8,9 @@
   "students": [
     {
       "id": 1,
-      "name": "Johnnnnnn",
+      "name": "Johnnnnnn EDIT",
       "email": "john@ms.com",
-      "age": 30,
+      "age": 37,
       "course": "Guitarra",
       "date": "2020-07-29T15:15:01.000Z",
       "status": true
@@ -21,7 +21,7 @@
       "email": "robert@ms.com",
       "age": 22,
       "course": "Baixo",
-      "date": "Fri Jul 31 2020 12:15:01 GMT-0300",
+      "date": "2020-07-31T15:15:01.000Z",
       "status": true
     },
     {
@@ -30,7 +30,7 @@
       "email": "anne@ms.com",
       "age": 25,
       "course": "Piano - Teclado",
-      "date": "Mon Jul 28 2020 12:15:01 GMT-0300",
+      "date": "2020-07-28T15:15:01.000Z",
       "status": true
     },
     {
@@ -58,6 +58,24 @@
       "age": 22,
       "course": "Bateria",
       "date": "2030-11-21T03:00:00.000Z",
+      "status": true
+    },
+    {
+      "id": 349,
+      "name": "w2 EDIT",
+      "email": "2@2testedit.com",
+      "age": 52,
+      "course": "Bateria",
+      "date": "2020-07-29T03:00:00.000Z",
+      "status": false
+    },
+    {
+      "id": 516,
+      "name": "Teste novo cadastro",
+      "email": "testenotifications@teste.com",
+      "age": 123123,
+      "course": "Bateria",
+      "date": "2020-08-20T03:00:00.000Z",
       "status": true
     }
   ],

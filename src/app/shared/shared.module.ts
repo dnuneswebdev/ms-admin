@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { MenuModule } from './components/menu/menu.module';
 import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
+import { UxService } from './services/ux.service';
 
 
 @NgModule({
@@ -21,6 +22,9 @@ import { FooterModule } from './components/footer/footer.module';
     MenuModule,
     HeaderModule,
     FooterModule,
+  ],
+  providers: [
+    UxService,
   ]
 })
 export class SharedModule { }

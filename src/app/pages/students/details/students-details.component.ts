@@ -4,6 +4,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { StudentsService } from '../services/students.service';
 import { Student } from '../models/student.model';
 import { Course } from 'src/app/shared/models/course.model';
+import { NotificationsService } from 'angular2-notifications';
+import { UxService } from 'src/app/shared/services/ux.service';
 
 @Component({
   selector: 'app-students-details',
@@ -25,6 +27,7 @@ export class StudentsDetailsComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private studentsService: StudentsService,
+    private uxService: UxService,
   ) { }
 
   ngOnInit(): void {
@@ -35,7 +38,6 @@ export class StudentsDetailsComponent implements OnInit {
       this.getStudentData();
     } else {
     }
-
   }
 
   buildStudentForm() {
@@ -43,7 +45,7 @@ export class StudentsDetailsComponent implements OnInit {
       id: [Math.floor(Math.random() * 1000) + 6],
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      age: [null, Validators.required],
+      age: [null, [Validators.required, Validators.maxLength(2)]],
       course: [null, Validators.required],
       date: ['', Validators.required],
       status: [true],
@@ -118,7 +120,13 @@ export class StudentsDetailsComponent implements OnInit {
           this.isLoading = false;
           this.router.navigate(['/students']);
           this.studentForm.reset();
+          this.uxService.success('Aluno cadastrado com sucesso!');
+          this.isSubmittingForm = false;
         }, 500);
+      }, error => {
+        this.uxService.error('Houve um erro, tente novamente mais tarde...')
+        this.isSubmittingForm = false;
+        console.log(error);
       });
   }
 
@@ -130,7 +138,13 @@ export class StudentsDetailsComponent implements OnInit {
           this.isLoading = false;
           this.router.navigate(['/students']);
           this.studentForm.reset();
+          this.uxService.success('Aluno alterado com sucesso!');
+          this.isSubmittingForm = false;
         }, 500);
+      }, error => {
+        this.uxService.error('Houve um erro, tente novamente mais tarde...')
+        this.isSubmittingForm = false;
+        console.log(error);
       })
   }
 
