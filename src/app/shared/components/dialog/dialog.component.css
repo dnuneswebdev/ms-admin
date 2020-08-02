@@ -1,0 +1,16 @@
+mat-dialog-container {
+  text-align: center;
+}
+
+mat-dialog-actions {
+  justify-content: center;
+}
+
+mat-icon {
+  font-size: 50px;
+}
+
+.mat-dialog-title {
+  margin: 0px !important;
+  text-align: center;
+}

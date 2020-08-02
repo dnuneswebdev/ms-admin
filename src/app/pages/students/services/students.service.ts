@@ -28,6 +28,10 @@ export class StudentsService {
     return this.http.put(`${environment.api}/students/${id}`, student);
   }
 
+  deleteStudent(id: number) {
+    return this.http.delete(`${environment.api}/students/${id}`);
+  }
+
   getAllCourses() {
     return this.http.get(`${environment.api}/courses`);
   }

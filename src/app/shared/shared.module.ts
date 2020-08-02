@@ -5,11 +5,11 @@ import { MenuModule } from './components/menu/menu.module';
 import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
 import { UxService } from './services/ux.service';
+import { DialogModule } from './components/dialog/dialog.module';
 
 
 @NgModule({
   declarations: [
-
   ],
   imports: [
     CommonModule,
@@ -17,6 +17,7 @@ import { UxService } from './services/ux.service';
     MenuModule,
     HeaderModule,
     FooterModule,
+    DialogModule,
   ],
   exports: [
     MenuModule,

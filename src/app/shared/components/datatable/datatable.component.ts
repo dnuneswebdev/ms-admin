@@ -20,6 +20,7 @@ export class DatatableComponent implements OnInit, AfterViewInit {
 
   @Output() editItem = new EventEmitter();
   @Output() deleteItem = new EventEmitter();
+  @Output() changeItemStatus = new EventEmitter();
 
   isLoading: boolean = true;
   matTableDataSource: MatTableDataSource<any>;
@@ -55,6 +56,15 @@ export class DatatableComponent implements OnInit, AfterViewInit {
 
   editTableItem(item) {
     this.editItem.emit(item);
+  }
+
+  deleteTableItem(item) {
+    this.deleteItem.emit(item);
+  }
+
+  changeTableItemStatus(item, event) {
+    const value = event.checked
+    this.changeItemStatus.emit({ element: item, status: value });
   }
 
 }
