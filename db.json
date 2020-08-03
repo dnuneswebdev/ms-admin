@@ -5,8 +5,7 @@
     "email": "user@test.com",
     "avatar": ""
   },
-  "students": [
-    {
+  "students": [{
       "id": 1,
       "name": "Johnnnnnn EDIT",
       "email": "john@ms.com",
@@ -70,15 +69,6 @@
       "status": false
     },
     {
-      "id": 903,
-      "name": "asdasdasd",
-      "email": "danielnds88@gmail.com",
-      "age": 22,
-      "course": "Canto",
-      "date": "2020-08-25T03:00:00.000Z",
-      "status": true
-    },
-    {
       "id": 108,
       "name": "teste",
       "email": "teste@teste",
@@ -97,8 +87,7 @@
       "status": false
     }
   ],
-  "teachers": [
-    {
+  "teachers": [{
       "id": 1,
       "name": "Rafael",
       "email": "rafael@ms.com",
@@ -134,8 +123,7 @@
       "role": "Saxofonista"
     }
   ],
-  "courses": [
-    {
+  "courses": [{
       "id": 1,
       "name": "Baixo"
     },
@@ -166,6 +154,39 @@
     {
       "id": 8,
       "name": "Violão"
+    }
+  ],
+  "roles": [{
+      "id": 1,
+      "name": "Baixista"
+    },
+    {
+      "id": 2,
+      "name": "Baterista"
+    },
+    {
+      "id": 3,
+      "name": "Cantor(a)"
+    },
+    {
+      "id": 4,
+      "name": "Guitarrista"
+    },
+    {
+      "id": 5,
+      "name": "Pianista - Tecladista"
+    },
+    {
+      "id": 6,
+      "name": "Saxofonista"
+    },
+    {
+      "id": 7,
+      "name": "Ukulelista"
+    },
+    {
+      "id": 8,
+      "name": "Violinista"
     }
   ]
 }
