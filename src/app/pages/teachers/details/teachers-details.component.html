@@ -62,7 +62,7 @@
             <h4>Data de início</h4>
             <mat-form-field appearance="outline">
               <mat-label>Selecione uma data</mat-label>
-              <input matInput [matDatepicker]="picker" name="date" formControlName="date" required>
+              <input matInput [matDatepicker]="picker" [max]="today" name="date" formControlName="date" required>
               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
               <mat-datepicker #picker></mat-datepicker>
               <mat-error>Por favor, selecione uma data.</mat-error>

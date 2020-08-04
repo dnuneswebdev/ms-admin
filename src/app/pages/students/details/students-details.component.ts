@@ -20,6 +20,7 @@ export class StudentsDetailsComponent implements OnInit {
   isSubmittingForm: boolean = false;
   studentId: number;
   routeParams: any;
+  today: Date = new Date();
 
   constructor(
     private formBuilder: FormBuilder,
