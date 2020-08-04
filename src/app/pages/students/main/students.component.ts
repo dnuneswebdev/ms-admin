@@ -29,6 +29,10 @@ export class StudentsComponent implements OnInit {
   getAllStudents() {
     this.studentsService.getAllStudents()
       .subscribe((students: Student[]) => {
+        students.forEach((student) => {
+          student.date = new Date(student.date).toLocaleDateString('pt-BR');
+        });
+
         this.students = students;
       })
   }

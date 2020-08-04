@@ -29,6 +29,10 @@ export class TeachersComponent implements OnInit {
   getAllTeachers() {
     this.teachersService.getAllTeachers()
       .subscribe((teachers: Teacher[]) => {
+        teachers.forEach((teacher) => {
+          teacher.date = new Date(teacher.date).toLocaleDateString('pt-BR');
+        });
+
         this.teachers = teachers;
       });
   }
