@@ -4,7 +4,6 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { StudentsService } from '../services/students.service';
 import { Student } from '../models/student.model';
 import { Course } from 'src/app/shared/models/course.model';
-import { NotificationsService } from 'angular2-notifications';
 import { UxService } from 'src/app/shared/services/ux.service';
 
 @Component({

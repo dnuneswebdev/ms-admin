@@ -4,4 +4,5 @@ export interface Teacher {
   email: string;
   age: number;
   role: string;
+  date: Date | string;
 }
