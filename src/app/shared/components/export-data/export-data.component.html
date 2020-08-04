@@ -1,0 +1,15 @@
+<button mat-raised-button class="mr-1" [matMenuTriggerFor]="exportMenu">
+  <mat-icon>upgrade</mat-icon>
+  Exportar
+</button>
+
+<mat-menu #exportMenu="matMenu">
+  <button mat-menu-item>
+    <mat-icon class="pdf">sticky_note_2</mat-icon>
+    <span>PDF</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon class="xls">subject</mat-icon>
+    <span>XLS</span>
+  </button>
+</mat-menu>

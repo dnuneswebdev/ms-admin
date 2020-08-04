@@ -25,6 +25,7 @@ import { BreadcrumbModule } from 'src/app/shared/components/breadcrumb/breadcrum
 import { PageTitleModule } from 'src/app/shared/components/page-title/page-title.module';
 import { DatatableModule } from 'src/app/shared/components/datatable/datatable.module';
 import { TeachersService } from './services/teachers.service';
+import { ExportDataModule } from 'src/app/shared/components/export-data/export-data.module';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { TeachersService } from './services/teachers.service';
     BreadcrumbModule,
     PageTitleModule,
     DatatableModule,
+    ExportDataModule,
     MatButtonModule,
     MatIconModule,
     MatFormFieldModule,
