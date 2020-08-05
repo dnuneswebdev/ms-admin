@@ -5,5 +5,5 @@ export interface Student {
   age: number;
   course: string;
   date: Date | string;
-  status: boolean;
+  status: boolean | string;
 }

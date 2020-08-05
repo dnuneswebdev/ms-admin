@@ -14,6 +14,7 @@ import { UxService } from 'src/app/shared/services/ux.service';
 export class StudentsComponent implements OnInit {
 
   students: Student[];
+  exportStudentsData: Array<any>;
 
   constructor(
     private router: Router,
@@ -34,7 +35,33 @@ export class StudentsComponent implements OnInit {
         });
 
         this.students = students;
-      })
+        this.buildExportStudentData();
+      });
+
+  }
+
+  buildExportStudentData() {
+    this.exportStudentsData = [];
+
+    this.students.forEach((student) => {
+      if (student.status === true) {
+        student.status = 'Ativo';
+      } else {
+        student.status = 'Inativo'
+      }
+
+      const exportData = {
+        Nome: student.name,
+        'E-mail': student.email,
+        Idade: student.age,
+        Início: student.date,
+        Curso: student.course,
+        Status: student.status
+      }
+
+      this.exportStudentsData.push(exportData);
+    });
+
   }
 
   addStudent() {

@@ -39,7 +39,7 @@
       "email": "marie@ms.com",
       "age": 43,
       "course": "Canto",
-      "date": "2020-07-13T03:00:00.000Z",
+      "date": "13/07/2020",
       "status": true
     },
     {
@@ -65,8 +65,8 @@
       "name": "NOVO",
       "email": "novo@teste.com",
       "age": 22,
-      "course": "Ukulelê",
-      "date": "2020-08-26T03:00:00.000Z",
+      "course": "Baixo",
+      "date": "2020-08-04T03:00:00.000Z",
       "status": false
     },
     {
@@ -75,7 +75,7 @@
       "email": "teste@teste",
       "age": 55,
       "course": "Violão",
-      "date": "2020-06-03T03:00:00.000Z",
+      "date": "03/06/2020",
       "status": true
     },
     {
@@ -94,7 +94,7 @@
       "name": "Rafael",
       "email": "rafael@ms.com",
       "age": 34,
-      "role": "Guitarrista",
+      "role": "Violinista",
       "date": "2020-07-29T15:15:01.000Z"
     },
     {

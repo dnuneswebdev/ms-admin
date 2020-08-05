@@ -25,6 +25,7 @@ import { StudentsRouting } from './students.routing';
 import { StudentsComponent } from './main/students.component';
 import { StudentsDetailsComponent } from './details/students-details.component';
 import { StudentsService } from './services/students.service';
+import { ExportDataModule } from 'src/app/shared/components/export-data/export-data.module';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { StudentsService } from './services/students.service';
     BreadcrumbModule,
     PageTitleModule,
     DatatableModule,
+    ExportDataModule,
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,

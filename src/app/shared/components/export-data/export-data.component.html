@@ -4,11 +4,11 @@
 </button>
 
 <mat-menu #exportMenu="matMenu">
-  <button mat-menu-item>
+  <button mat-menu-item (click)="generatePdf()">
     <mat-icon class="pdf">sticky_note_2</mat-icon>
     <span>PDF</span>
   </button>
-  <button mat-menu-item>
+  <button mat-menu-item (click)="generateXls()">
     <mat-icon class="xls">subject</mat-icon>
     <span>XLS</span>
   </button>

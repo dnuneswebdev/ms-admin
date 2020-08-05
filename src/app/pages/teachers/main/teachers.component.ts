@@ -14,6 +14,7 @@ import { UxService } from 'src/app/shared/services/ux.service';
 export class TeachersComponent implements OnInit {
 
   teachers: Teacher[];
+  exportTeachersData: Array<any>;
 
   constructor(
     private router: Router,
@@ -34,7 +35,24 @@ export class TeachersComponent implements OnInit {
         });
 
         this.teachers = teachers;
+        this.buildTeachersExportData();
       });
+  }
+
+  buildTeachersExportData() {
+    this.exportTeachersData = [];
+
+    this.teachers.forEach((teacher) => {
+      const exportData = {
+        Nome: teacher.name,
+        'E-mail': teacher.email,
+        Idade: teacher.age,
+        Início: teacher.date,
+        Profissão: teacher.role
+      }
+
+      this.exportTeachersData.push(exportData);
+    });
   }
 
   addTeacher() {

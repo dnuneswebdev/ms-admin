@@ -11,7 +11,10 @@
 
   <!-- buttons -->
   <div class="mb-2">
-    <app-export-data></app-export-data>
+    <app-export-data [data]="exportTeachersData" [title]="'Professores'"
+      [fields]="['Nome', 'E-mail', 'Idade', 'Início', 'Profissão']"
+      [labels]="['Nome', 'E-mail', 'Idade', 'Início', 'Profissão']">
+    </app-export-data>
     <button mat-raised-button color="primary" (click)="addTeacher()">
       <mat-icon>person_add</mat-icon>
       Add Professor
